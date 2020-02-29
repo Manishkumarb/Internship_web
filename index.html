@@ -8,6 +8,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	.nav-link:hover{color:green;}
+  </style>
 </head>
 <body>
 
@@ -17,35 +20,30 @@
   <div class="row">
   	<nav class="navbar navbar-expand-sm navbar-light bg-light  w-100" style="display: flex; justify-content: space-between ; ">
 	  <a class="navbar-brand" href="#">
-    	<img src="./images/logo.png" width="100" height="60" alt="">
+    	<img src="./images/logo.jpg" width="100" height="60" alt="">
   	  </a>
 
 	  <!-- Links -->
 	  <ul class="navbar-nav" style="width: 40%; margin-right: 2%; display: flex; justify-content: space-between;">
 	    <li class="nav-item">
-	      <a class="nav-link" href="index.html">Home</a>
+	      <a class="nav-link" href="index.html" style="color: black" onmouseover="this.style.color='#329da8'" onmouseout="this.style.color='black'">Home</a>
 	    </li>
 	    <li class="nav-item" >
-	      <a class="nav-link" href="about.html">About Us</a>
+	      <a class="nav-link" href="about.html" style="color: black" onmouseover="this.style.color='#329da8'" onmouseout="this.style.color='black'">About Us</a>
 	    </li>
 
 	     <li class="nav-item" >
-	      <a class="nav-link" href="product.html">Products</a>
-	    </li>
-
-	    <li class="nav-item dropdown" >
-	      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-	        Services
-	      </a>
-	      <div class="dropdown-menu">
-	        <a class="dropdown-item" href="#">Link 1</a>
-	        <a class="dropdown-item" href="#">Link 2</a>
-	        <a class="dropdown-item" href="#">Link 3</a>
-	      </div>
+	      <a class="nav-link" href="product.html" style="color: black" onmouseover="this.style.color='#329da8'" onmouseout="this.style.color='black'">Products</a>
 	    </li>
 
 	    <li class="nav-item" >
-	      <a class="nav-link" href="contact.html">Contact Us</a>
+	      <a class="nav-link" href="facilities.html" style="color: black" onmouseover="this.style.color='#329da8'" onmouseout="this.style.color='black'">Facilities</a>
+	    </li>
+
+	    
+
+	    <li class="nav-item" >
+	      <a class="nav-link" href="contact.html" style="color: black" onmouseover="this.style.color='#329da8'" onmouseout="this.style.color='black'">Contact Us</a>
 	    </li>
 	  </ul>
 	</nav>
@@ -58,24 +56,27 @@
 	  <ul class="carousel-indicators">
 	    <li data-target="#demo" data-slide-to="0" class="active"></li>
 	    <li data-target="#demo" data-slide-to="1"></li>
-	    <li data-target="#demo" data-slide-to="2"></li>
+	   
 	  </ul>
 
 	  <!-- The slideshow -->
 	  <div class="carousel-inner">
 	    <div class="carousel-item active" data-interval="3000" >
-	      <img src="./images/1img.jpg" alt="Los Angeles" style="width: 100%; height: 560px; max-height: 560px; ">
+	      <img src="./images/cro1.png" alt="Los Angeles" style="width: 100%; height: 560px; max-height: 560px; ">
 	      <div class="carousel-caption">
-		    <h3>CNC Machine</h3>
-		    <p>Working of CNC</p>
+		    <h3>CNC TURNING SECTION</h3>
+		    
 		  </div>
 	    </div>
 	    <div class="carousel-item" data-interval="3000">
-	      <img src="./images/5img.jpg" alt="Chicago" style="width: 100%; height: 560px; max-height: 560px">
+	      <img src="./images/cro2.png" alt="Chicago" style="width: 100%; height: 560px; max-height: 560px">
+
+	      <div class="carousel-caption">
+		    <h3>CYLINDRICAL GRINDING SECTION</h3>
+		    
+		  </div>
 	    </div>
-	    <div class="carousel-item" data-interval="3000">
-	      <img src="./images/6img.jpeg" alt="New York" style="width: 100%; height: 560px; max-height: 560px">
-	    </div>
+	    
 	  </div>
 
 	  <!-- Left and right controls -->
@@ -89,44 +90,59 @@
 	</div>
   </div>
 
-  <div class="row" style="display: flex; flex-direction: column; margin-top: 3%;padding-left: 2% " >
+  <!-- <div class="row" style="display: flex; flex-direction: column; margin-top: 3%;padding-left: 2% " >
   	<div style="display: flex; justify-content: center; width: 100%; font-size: 40px; font-weight: bold">Who Are We</div>
   	<div style="display: flex; justify-content: center; width: 100%; margin-top:3%">
-  		<p style="text-align: center;">Sathvik Engineers is a leading manufacturer of custom-engineered products from steel wire and sheet metal. Our material handling baskets, wire forms and mobile carts serve many industries including aerospace, defense, medical, food processing and automotive.</p>
+  		<p style="text-align: center;">Sathvik Engineers is a  manufacturer of Precision Machined components for Machine Tool, Aerospace, Automotive and Processing industries. </p>
+  	</div>
+  </div> -->
+
+  <div class="row" style="display: flex; flex-direction: column;  margin-top: 3%;  padding-bottom: 2%;" >
+  	<div style="display: flex; justify-content: center; width: 100%; font-size: 40px; font-weight: bold">Industries We Serve</div>
+  	<div style="display: flex; align-items: center; justify-content: space-around; width: 100%; margin-top:3%">
+  		<figure>
+		  <img src="./images/auto.jpg"  style="width:200px;height: 200px">
+		  <figcaption style="font-weight: bold;text-align: center;margin-top:2px">Automotive</figcaption>
+		</figure>
+		<figure>
+		  <img src="./images/aero.jpg"  style="width:200px;height: 200px">
+		  <figcaption style="font-weight: bold;text-align: center;margin-top:2px">Aerospace</figcaption>
+		</figure>
+		<figure>
+		  <img src="./images/machinetool.jpg"  style="width:200px;height: 200px">
+		  <figcaption style="font-weight: bold;text-align: center;margin-top:2px">Machine Tools</figcaption>
+		</figure>
+  		
   	</div>
   </div>
 
   <div class="row" style="display: flex; flex-direction: column;  margin-top: 3%; background-color: #f8f8f8; padding-bottom: 2%;" >
-  	<div style="display: flex; justify-content: center; width: 100%; font-size: 40px; font-weight: bold">Clients</div>
+  	<div style="display: flex; justify-content: center; width: 100%; font-size: 40px; font-weight: bold">Our Clients</div>
   	<div style="display: flex; align-items: center; justify-content: space-around; width: 100%; margin-top:3%">
-  		<img src="./images/cli1.png" style="width:200px;height: 200px" >
-  		<img src="./images/cli2.png" style="width:200px;height: 200px">
-  		<img src="./images/cli3.png" style="width:200px;height: 200px">
+  		<img src="./images/maini.jpg" style="width:200px;height: 200px" >
+  		<img src="./images/moog.png" style="width:200px;height: 200px">
+  		<img src="./images/bliz.jpg" style="width:200px;height: 200px">
+  		<img src="./images/ucam.png" style="width:200px;height: 200px">
   	</div>
   </div>
 
 
-  <div class="row" style="display: flex; flex-direction: column;  margin-top: 3%;padding-left: 2%" >
-  	<div style="display: flex; justify-content: center; width: 100%; font-size: 40px; font-weight: bold">What We Do</div>
-  	<div style="display: flex;  justify-content: center; width: 100%; margin-top:3%;">
-  		<p style="text-align: center;">Sathvik Engineer is a leading manufacturer of custom-engineered products from steel wire and sheet metal. Our material handling baskets, wire forms and mobile carts serve many industries including aerospace, defense, medical, food processing and automotive.</p>
-  	</div>
-  </div>
+  
 
   <div class="row text-muted" style="display: flex; flex-direction: column; background-color: #021024;color: white;margin-top: 5%">
   	<div style="display: flex; justify-content: space-between; margin-top: 25px">
   		<div style="margin-left: 40px">
   			<h4>Sathvik Engineers</h4>
   			<div style="display: flex; flex-direction: column; margin-top: 10%">
-  				<img src="./images/logo.png" width="40%" height="40%" alt="">
+  				<img src="./images/logo.jpg" width="40%" height="40%" alt="">
   			</div>
   		</div>
   		<div style="display: flex; flex-direction: column;margin-right: 15px">
   			<p>Sathvik Engineers</p>
-  			<p>Heganalli Andralli Main Rd, Doddanna Industrial estste, Hegganahalli</p>
-  			<p>Bengaluru, Karnataka 560058</p>
-  			<p>Mobile Number:+91 9880663923</p>
-  			<p>Email: sathvik@gmail.com</p>
+  			<p>No. 4 ‘B’, On Doddanna Industrial Estate main Road, Doddanna Industrial Estate,</p>
+  			<p>Near Peenya II Stage, Vishwaneedam Post , Bengaluru, Karnataka 560091</p>
+  			<p>Mobile Number:+91 9880663923 / 9845718691 </p>
+  			<p>Email: sathvikengineers@gmail.com</p>
   		</div>
   	</div>
   	<hr style="width: 100%; color: white; height: 1px; background-color: white;">
